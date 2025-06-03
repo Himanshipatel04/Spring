@@ -20,7 +20,7 @@ public class PaymentController {
 
     @GetMapping("/{id}")
     public ResponseEntity<PaymentResponse> getPaymentById(@PathVariable Long id) {
-         System.out.println(id);
+        System.out.println(id);
         // Map incoming request to DTO
         PaymentRequest internalReqObj = new PaymentRequest();
         internalReqObj.setPaymentId(id);
